@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7/Course.cpp
+Course.hpp
+/cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7/Course.hpp
+
+/cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7/Course.hpp
+iostream
+-
+
+/cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+iterator
+-
+fstream
+-
+string
+-
+sstream
+-
+stdio.h
+-
+stdlib.h
+-
+Course.hpp
+/cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7/Course.hpp
+

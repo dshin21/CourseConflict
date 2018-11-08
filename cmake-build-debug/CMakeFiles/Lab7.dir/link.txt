@@ -1,0 +1,1 @@
+C:/cygwin64/bin/g++.exe -g  -Wl,--enable-auto-import CMakeFiles/Lab7.dir/main.cpp.o CMakeFiles/Lab7.dir/Course.cpp.o  -o Lab7.exe -Wl,--out-implib,libLab7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
