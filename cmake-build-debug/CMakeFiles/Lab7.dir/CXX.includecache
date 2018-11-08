@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/Course.hpp
+iostream
+-
+map
+-
+
+/cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+iterator
+-
+fstream
+-
+string
+-
+sstream
+-
+stdio.h
+-
+stdlib.h
+-
+Course.hpp
+/cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/Course.hpp
+

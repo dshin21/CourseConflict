@@ -1,10 +1,10 @@
 // Course.h
 #include <iostream>
+#include <map>
 
 using namespace std;
 
 struct Course {
-
     enum dayOfWeek {
         MON, TUE, WED, THUR, FRI, SAT, SUN
     };
