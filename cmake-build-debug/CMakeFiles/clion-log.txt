@@ -1,4 +1,4 @@
-C:\Users\a00257049\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=C:/cygwin64/bin/g++.exe -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7
+C:\Users\danie\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7
 -- The C compiler identification is GNU 7.3.0
 -- The CXX compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -7,12 +7,12 @@ C:\Users\a00257049\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_
 -- Detecting C compiler ABI info - done
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Check for working CXX compiler: C:/cygwin64/bin/g++.exe
--- Check for working CXX compiler: C:/cygwin64/bin/g++.exe -- works
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Users/a00257049/CLionProjects/Lab7/Lab7/cmake-build-debug
+-- Build files have been written to: /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug

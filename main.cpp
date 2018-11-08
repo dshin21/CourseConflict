@@ -15,12 +15,11 @@ using namespace std;
  * print schedule - outputs course schedule to the screen
  * @param - add any new parameters you need
  */
-void printSchedule()
-{
+void printSchedule() {
     //TODO implement your print using the copy algorithm, 2 iterators, and an ostream_iterator
 }
 
-int main () {
+int main() {
     //TODO read from courses.txt
     //TODO store data in an STL container
     //TODO sort your STL container with the sort algorithm
