@@ -19,8 +19,6 @@ struct Course {
 
     bool operator==(const Course &m) const;
 
-    friend void swap(Course &first, Course &second);
-
     string title; // Name of Course
     dayOfWeek day; // Day of Course
     unsigned int start_time; // Course start time in HHMM format

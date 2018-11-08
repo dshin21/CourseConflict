@@ -9,15 +9,11 @@ Course::Course(const Course &m)
         : title(m.title), day(m.day), start_time(m.start_time), finish_time(m.finish_time) {}
 
 Course &Course::operator=(Course &m) {
-    swap(*this, m);
+    title = m.title;
+    day = m.day;
+    start_time = m.start_time;
+    finish_time = m.finish_time;
     return *this;
-}
-
-void swap(Course &first, Course &second) {
-    std::swap(first.title, second.title);
-    std::swap(first.day, second.day);
-    std::swap(first.start_time, second.start_time);
-    std::swap(first.finish_time, second.finish_time);
 }
 
 bool Course::operator==(const Course &m) const {
