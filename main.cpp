@@ -67,20 +67,17 @@ int main() {
     std::sort(course_vector.begin(), course_vector.end());
 
     //TODO implement code to determine schedule conflicts
+    //TODO print out schedule conflicts
     for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
         for (auto j = i + 1; j != course_vector.end(); ++j) {
-//            TODO: figure out logic
-            if (i->day == j->day && (i->start_time == j->start_time)) {
+            if (i->day == j->day && (j->start_time <= i->finish_time)) {
                 cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << endl;
                 cout << j->title << " " << get_day_string(j->day) << " " << j->start_time << endl;
+                cout << "\n";
             }
         }
     }
 
-
-
-
-//TODO print out schedule conflicts
 //TODO print out schedule
     return 0;
 }
