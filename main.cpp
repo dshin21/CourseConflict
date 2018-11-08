@@ -19,6 +19,8 @@ void printSchedule() {
     //TODO implement your print using the copy algorithm, 2 iterators, and an ostream_iterator
 }
 
+bool sort_by_day(Course i, Course j) { return i.day < j.day; }
+
 string get_day_string(unsigned int day) {
     switch (day) {
         case 0:
@@ -71,13 +73,18 @@ int main() {
     for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
         for (auto j = i + 1; j != course_vector.end(); ++j) {
             if (i->day == j->day && (j->start_time <= i->finish_time)) {
+                cout << "CONFLICT" << endl;
                 cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << endl;
                 cout << j->title << " " << get_day_string(j->day) << " " << j->start_time << endl;
                 cout << "\n";
             }
         }
     }
+    std::sort(course_vector.begin(), course_vector.end(), sort_by_day);
 
 //TODO print out schedule
+    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
+        cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << " " << i->finish_time << endl;
+    }
     return 0;
 }

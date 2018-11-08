@@ -24,7 +24,7 @@ bool Course::operator==(const Course &m) const {
 }
 
 bool Course::operator<(const Course &m) const {
-    return finish_time < m.start_time;
+    return start_time < m.start_time;
 }
 
 ostream &operator<<(ostream &os, const Course &m) {

@@ -6,13 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.cpp
-Course.hpp
-/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.hpp
-
 /cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.hpp
 iostream
 -
 map
 -
+
+/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+iterator
+-
+fstream
+-
+string
+-
+sstream
+-
+stdio.h
+-
+stdlib.h
+-
+Course.hpp
+/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.hpp
 
