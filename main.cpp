@@ -19,6 +19,22 @@ void printSchedule() {
     //TODO implement your print using the copy algorithm, 2 iterators, and an ostream_iterator
 }
 
+string get_day_string(unsigned int day) {
+    switch (day) {
+        case 0:
+            return "M";
+        case 1:
+            return "T";
+        case 2:
+            return "W";
+        case 3:
+            return "R";
+        case 4:
+            return "F";
+
+    }
+}
+
 int main() {
     //TODO read from courses.txt
     ifstream is{"../courses.txt"};
@@ -28,7 +44,7 @@ int main() {
     day_map.insert(pair<string, Course::dayOfWeek>("M", Course::dayOfWeek::MON));
     day_map.insert(pair<string, Course::dayOfWeek>("T", Course::dayOfWeek::TUE));
     day_map.insert(pair<string, Course::dayOfWeek>("W", Course::dayOfWeek::WED));
-    day_map.insert(pair<string, Course::dayOfWeek>("TH", Course::dayOfWeek::THUR));
+    day_map.insert(pair<string, Course::dayOfWeek>("R", Course::dayOfWeek::THUR));
     day_map.insert(pair<string, Course::dayOfWeek>("F", Course::dayOfWeek::FRI));
 
     vector<Course> course_vector;
@@ -44,13 +60,27 @@ int main() {
         iss >> day;
         iss >> start_time;
         iss >> finish_time;
-        course_vector.push_back(Course(title, day_map.find(day)->second, start_time, finish_time));
+        Course temp(title, day_map.find(day)->second, start_time, finish_time);
+        course_vector.push_back(temp);
     }
     //TODO sort your STL container with the sort algorithm
     std::sort(course_vector.begin(), course_vector.end());
 
     //TODO implement code to determine schedule conflicts
-    //TODO print out schedule conflicts
-    //TODO print out schedule
+    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
+        for (auto j = i + 1; j != course_vector.end(); ++j) {
+//            TODO: figure out logic
+            if (i->day == j->day && (i->start_time == j->start_time)) {
+                cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << endl;
+                cout << j->title << " " << get_day_string(j->day) << " " << j->start_time << endl;
+            }
+        }
+    }
+
+
+
+
+//TODO print out schedule conflicts
+//TODO print out schedule
     return 0;
 }

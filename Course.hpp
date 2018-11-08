@@ -6,14 +6,14 @@ using namespace std;
 
 struct Course {
     enum dayOfWeek {
-        MON, TUE, WED, THUR, FRI, SAT, SUN
+        MON, TUE, WED, THUR, FRI
     };
 
     Course(string title, dayOfWeek day, unsigned int start_time, unsigned int finish_time);
 
     Course(const Course &m);
 
-    Course &operator=(Course &m);
+    Course &operator=(const Course &m);
 
     bool operator<(const Course &m) const;
 

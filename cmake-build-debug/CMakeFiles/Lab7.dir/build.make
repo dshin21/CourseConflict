@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/danie/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = "/cygdrive/c/Users/Daniel Shin/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe"
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/danie/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = "/cygdrive/c/Users/Daniel Shin/.CLion2018.2/system/cygwin_cmake/bin/cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Lab7.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/Lab7.dir/flags.make
 
 CMakeFiles/Lab7.dir/main.cpp.o: CMakeFiles/Lab7.dir/flags.make
 CMakeFiles/Lab7.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab7.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab7.dir/main.cpp.o -c /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab7.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab7.dir/main.cpp.o -c "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/main.cpp"
 
 CMakeFiles/Lab7.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab7.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/main.cpp > CMakeFiles/Lab7.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/main.cpp" > CMakeFiles/Lab7.dir/main.cpp.i
 
 CMakeFiles/Lab7.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab7.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/main.cpp -o CMakeFiles/Lab7.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/main.cpp" -o CMakeFiles/Lab7.dir/main.cpp.s
 
 CMakeFiles/Lab7.dir/Course.cpp.o: CMakeFiles/Lab7.dir/flags.make
 CMakeFiles/Lab7.dir/Course.cpp.o: ../Course.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab7.dir/Course.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab7.dir/Course.cpp.o -c /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/Course.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab7.dir/Course.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab7.dir/Course.cpp.o -c "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.cpp"
 
 CMakeFiles/Lab7.dir/Course.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab7.dir/Course.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/Course.cpp > CMakeFiles/Lab7.dir/Course.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.cpp" > CMakeFiles/Lab7.dir/Course.cpp.i
 
 CMakeFiles/Lab7.dir/Course.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab7.dir/Course.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/Course.cpp -o CMakeFiles/Lab7.dir/Course.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/Course.cpp" -o CMakeFiles/Lab7.dir/Course.cpp.s
 
 # Object files for target Lab7
 Lab7_OBJECTS = \
@@ -95,7 +95,7 @@ Lab7.exe: CMakeFiles/Lab7.dir/main.cpp.o
 Lab7.exe: CMakeFiles/Lab7.dir/Course.cpp.o
 Lab7.exe: CMakeFiles/Lab7.dir/build.make
 Lab7.exe: CMakeFiles/Lab7.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab7.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab7.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab7.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/Lab7.dir/clean:
 .PHONY : CMakeFiles/Lab7.dir/clean
 
 CMakeFiles/Lab7.dir/depend:
-	cd /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7 /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7 /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict" "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict" "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug" "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug" "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug/CMakeFiles/Lab7.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Lab7.dir/depend
 

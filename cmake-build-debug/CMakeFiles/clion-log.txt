@@ -1,4 +1,4 @@
-C:\Users\danie\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7
+"C:\Users\Daniel Shin\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict"
 -- The C compiler identification is GNU 7.3.0
 -- The CXX compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@ C:\Users\danie\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/d/googleDrive/DBOX/TELEPORT/COMP_3712/Labs/W10/Lab7/Lab7/cmake-build-debug
+-- Build files have been written to: /cygdrive/c/Users/Daniel Shin/Downloads/CourseConflict/cmake-build-debug

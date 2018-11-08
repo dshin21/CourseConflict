@@ -8,7 +8,7 @@ Course::Course(string title, dayOfWeek day, unsigned int start_time, unsigned in
 Course::Course(const Course &m)
         : title(m.title), day(m.day), start_time(m.start_time), finish_time(m.finish_time) {}
 
-Course &Course::operator=(Course &m) {
+Course &Course::operator=(const Course &m) {
     title = m.title;
     day = m.day;
     start_time = m.start_time;
