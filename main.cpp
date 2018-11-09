@@ -11,14 +11,6 @@
 
 using namespace std;
 
-/*
- * print schedule - outputs course schedule to the screen
- * @param - add any new parameters you need
- */
-void printSchedule() {
-    //TODO implement your print using the copy algorithm, 2 iterators, and an ostream_iterator
-}
-
 bool sort_by_day(Course i, Course j) { return i.day < j.day; }
 
 string get_day_string(unsigned int day) {
@@ -33,15 +25,34 @@ string get_day_string(unsigned int day) {
             return "R";
         case 4:
             return "F";
+        default:
+            break;
+    }
+}
 
+void printSchedule(vector<Course> &course_vector) {
+    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
+        for (auto j = i + 1; j != course_vector.end(); ++j) {
+            if (i->day == j->day && (j->start_time <= i->finish_time)) {
+                cout << "CONFLICT: " << endl;
+                cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << " " << i->finish_time
+                     << endl;
+                cout << j->title << " " << get_day_string(j->day) << " " << j->start_time << " " << j->finish_time
+                     << endl;
+                cout << "\n";
+            }
+        }
+    }
+    std::sort(course_vector.begin(), course_vector.end(), sort_by_day);
+
+    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
+        cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << " " << i->finish_time << endl;
     }
 }
 
 int main() {
-    //TODO read from courses.txt
     ifstream is{"../courses.txt"};
 
-    //TODO store data in an STL container
     map<string, Course::dayOfWeek> day_map;
     day_map.insert(pair<string, Course::dayOfWeek>("M", Course::dayOfWeek::MON));
     day_map.insert(pair<string, Course::dayOfWeek>("T", Course::dayOfWeek::TUE));
@@ -65,26 +76,9 @@ int main() {
         Course temp(title, day_map.find(day)->second, start_time, finish_time);
         course_vector.push_back(temp);
     }
-    //TODO sort your STL container with the sort algorithm
+
     std::sort(course_vector.begin(), course_vector.end());
 
-    //TODO implement code to determine schedule conflicts
-    //TODO print out schedule conflicts
-    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
-        for (auto j = i + 1; j != course_vector.end(); ++j) {
-            if (i->day == j->day && (j->start_time <= i->finish_time)) {
-                cout << "CONFLICT" << endl;
-                cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << endl;
-                cout << j->title << " " << get_day_string(j->day) << " " << j->start_time << endl;
-                cout << "\n";
-            }
-        }
-    }
-    std::sort(course_vector.begin(), course_vector.end(), sort_by_day);
-
-//TODO print out schedule
-    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
-        cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << " " << i->finish_time << endl;
-    }
+    printSchedule(course_vector);
     return 0;
 }
