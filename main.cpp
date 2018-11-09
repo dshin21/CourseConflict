@@ -13,41 +13,30 @@ using namespace std;
 
 bool sort_by_day(Course i, Course j) { return i.day < j.day; }
 
-string get_day_string(unsigned int day) {
-    switch (day) {
-        case 0:
-            return "M";
-        case 1:
-            return "T";
-        case 2:
-            return "W";
-        case 3:
-            return "R";
-        case 4:
-            return "F";
-        default:
-            break;
-    }
-}
-
-void printSchedule(vector<Course> &course_vector) {
+vector<string> find_conflicts(vector<Course> &course_vector) {
+    vector<string> conflict_vector;
     for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
         for (auto j = i + 1; j != course_vector.end(); ++j) {
             if (i->day == j->day && (j->start_time <= i->finish_time)) {
-                cout << "CONFLICT: " << endl;
-                cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << " " << i->finish_time
-                     << endl;
-                cout << j->title << " " << get_day_string(j->day) << " " << j->start_time << " " << j->finish_time
-                     << endl;
-                cout << "\n";
+                ostringstream oss{};
+                oss << "CONFLICT: " << endl;
+                oss << i->title << " " << i->get_day_string(i->day) << " " << i->start_time << " " << i->finish_time
+                    << endl;
+                oss << j->title << " " << j->get_day_string(j->day) << " " << j->start_time << " " << j->finish_time
+                    << endl;
+                oss << "\n";
+                conflict_vector.push_back(oss.str());
             }
         }
     }
-    std::sort(course_vector.begin(), course_vector.end(), sort_by_day);
+    return conflict_vector;
+}
 
-    for (std::vector<Course>::const_iterator i = course_vector.begin(); i != course_vector.end(); ++i) {
-        cout << i->title << " " << get_day_string(i->day) << " " << i->start_time << " " << i->finish_time << endl;
-    }
+void printSchedule(vector<Course> &course_vector) {
+    std::copy(find_conflicts(course_vector).begin(), find_conflicts(course_vector).end(),
+              std::ostream_iterator<string>(cout));
+    std::sort(course_vector.begin(), course_vector.end(), sort_by_day);
+    std::copy(course_vector.begin(), course_vector.end(), std::ostream_iterator<Course>(cout));
 }
 
 int main() {

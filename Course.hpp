@@ -19,6 +19,8 @@ struct Course {
 
     bool operator==(const Course &m) const;
 
+    string get_day_string(unsigned int day) const;
+
     string title; // Name of Course
     dayOfWeek day; // Day of Course
     unsigned int start_time; // Course start time in HHMM format

@@ -28,6 +28,23 @@ bool Course::operator<(const Course &m) const {
 }
 
 ostream &operator<<(ostream &os, const Course &m) {
-    os << m.title << " " << m.day << " " << m.start_time << " " << m.finish_time;
+    os << m.title << " " << m.get_day_string(m.day) << " " << m.start_time << " " << m.finish_time << endl;
     return os;
+}
+
+string Course::get_day_string(unsigned int day) const {
+    switch (day) {
+        case 0:
+            return "M";
+        case 1:
+            return "T";
+        case 2:
+            return "W";
+        case 3:
+            return "R";
+        case 4:
+            return "F";
+        default:
+            break;
+    }
 }
