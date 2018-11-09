@@ -19,12 +19,12 @@ vector<string> find_conflicts(vector<Course> &course_vector) {
         for (auto j = i + 1; j != course_vector.end(); ++j) {
             if (i->day == j->day && (j->start_time <= i->finish_time)) {
                 ostringstream oss{};
-                oss << "CONFLICT: " << endl;
+                oss << "\n";
+                oss << "\033[0;31mCONFLICT: " << endl;
                 oss << i->title << " " << i->get_day_string(i->day) << " " << i->start_time << " " << i->finish_time
                     << endl;
                 oss << j->title << " " << j->get_day_string(j->day) << " " << j->start_time << " " << j->finish_time
                     << endl;
-                oss << "\n";
                 conflict_vector.push_back(oss.str());
             }
         }
@@ -32,11 +32,11 @@ vector<string> find_conflicts(vector<Course> &course_vector) {
     return conflict_vector;
 }
 
-void printSchedule(vector<Course> &course_vector) {
-    std::copy(find_conflicts(course_vector).begin(), find_conflicts(course_vector).end(),
-              std::ostream_iterator<string>(cout));
+void printSchedule(vector<Course> course_vector) {
     std::sort(course_vector.begin(), course_vector.end(), sort_by_day);
     std::copy(course_vector.begin(), course_vector.end(), std::ostream_iterator<Course>(cout));
+    std::copy(find_conflicts(course_vector).begin(), find_conflicts(course_vector).end(),
+              std::ostream_iterator<string>(cout));
 }
 
 int main() {
